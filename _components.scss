@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.logo{
+    font-size: 32px;
+    color: $color-secondary;
+    text-decoration: none;
+    width: 30%;
+    margin: 10px;
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: $color-white;
+    margin: 30px;
+    padding: 25px;
+}
+
+.button {
+    font-size: 14px;
+    color: $color-secondary;
+    font-weight: bold;
+    margin: 30px;
+    padding: 15px;
+    background: none;
+    box-shadow: none;
+    border: 2px solid $color-secondary;
+    border-radius: 8px;
+    text-shadow: none;
+}
+
+.dividing-line{
+    width:103px;
+    height: 2px;
+    background: $color-secondary;
+}

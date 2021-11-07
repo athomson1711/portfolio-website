@@ -1,0 +1,15 @@
+$font-main: 'Roboto', sans-serif;
+
+$color-primary: #3A4C5A;
+$color-secondary: #FFCD38;
+$color-white:#F5F7F9;
+$color-highlight:#4C5B68;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: $font-main;
+    color: $color-white;
+    background-color: $color-primary;
+}
