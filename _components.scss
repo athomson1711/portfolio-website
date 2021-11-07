@@ -13,7 +13,6 @@
 a {
     text-decoration: none;
     font-size: 14px;
-    font-weight: bold;
     color: $color-white;
     margin: 30px;
     padding: 25px;
@@ -22,7 +21,6 @@ a {
 .button {
     font-size: 14px;
     color: $color-secondary;
-    font-weight: bold;
     margin: 30px;
     padding: 15px;
     background: none;
@@ -30,10 +28,67 @@ a {
     border: 2px solid $color-secondary;
     border-radius: 8px;
     text-shadow: none;
+
+    &--intro{
+        margin: 70px 0px;
+    }
 }
 
 .dividing-line{
     width:103px;
     height: 2px;
     background: $color-secondary;
+    margin: 30px 0px;
+}
+
+.intro{
+    text-align: left;
+
+
+        &__heading{
+            font-size: 48px;
+            font-style: normal;
+            color: $color-secondary;
+            text-transform: uppercase;
+        }
+
+        &__subheading{
+            font-size: 36px;
+            font-style: normal;
+            color: $color-white;
+        }
+}
+
+
+.portfolio {
+    text-align: left;
+
+        &__heading{
+            text-align: center;
+            text-transform: uppercase;
+        }
+}
+
+// .projects {
+//     display: flex;
+
+// }
+
+.project-card{
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    background-color: $color-highlight;
+
+        .project-card-name {
+            text-transform: uppercase;
+            color: $color-secondary;
+            width: 50%;
+        }
+
+        .project-card-button{
+
+        }
+
 }
