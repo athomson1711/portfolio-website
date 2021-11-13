@@ -8,13 +8,13 @@ $color-highlight:#4C5B68;
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: $font-main;
     color: $color-white;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: $color-primary;
 }
-

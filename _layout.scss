@@ -1,4 +1,4 @@
-.header{
+.header {
     padding: 10px;
     margin: 30px;
     height: 100vh;
@@ -14,56 +14,62 @@
 }
 
 
-.main{
+.main {
     padding: 0px 30px;
     margin: 0px 30px;
 }
 
-.intro{
+.intro {
     height: 90%;
     width: 40%;
     margin: 30px;
 }
 
-.portfolio{
+.portfolio {
     height: 100vh;
     width: 100%;
 
-    &__header{
-    height: 10%;
+    &__header {
+        height: 10%;
     }
 
-    &__area{
+    &__area {
         height: 90%;
         display: grid;
         justify-content: center;
 
     }
-
-
 }
 
-
-.about{
+.about {
     height: 85vh;
 
-    &__header{
+    &__header {
         height: 10%;
-        }
-    
-        &__area{
-            height: 90%;
-            display: flex;
-            justify-content: center;
-    
-        }
+    }
+
+    &__area {
+        height: 90%;
+        display: flex;
+        justify-content: center;
+
+    }
 }
 
-.footer{
+.footer {
     height: 10vh;
+    width: 100%;
     margin: 0px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
+
+
+    &__buttons {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 }

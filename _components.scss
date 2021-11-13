@@ -1,58 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-.header__background{
-    background-color: green;
-    opacity: 90%;
-    width: 300px;
-    height: 50vh;
-    float: left;
-}
+// .header__background{
+//     background-color: green;
+//     opacity: 90%;
+//     width: 300px;
+//     height: 50vh;
+//     float: left;
+// }
 
-.button {
-    font-size: 14px;
-    font-weight: bold;
-    color: $color-secondary;
-    margin: 30px;
-    padding: 15px;
-    background: none;
-    box-shadow: none;
-    border: 2px solid $color-secondary;
-    border-radius: 8px;
-    text-shadow: none;
- 
-    
-    &--intro{
-        margin: 70px 0px;
-    }
-}
 
-.button:hover{
-    color: $color-white;
-    border: 2px solid $color-white;
-}
+// NAVIGATION COMPONENTS
 
-.navigation{ 
-    
+.navigation {
+
+    *,
     .button {
-        font-size: 18px;
-        font-weight: bold;
-        color: $color-secondary;
-        margin: 30px;
-        padding: 15px;
-        background: none;
-        box-shadow: none;
-        border: 2px solid $color-secondary;
-        border-radius: 8px;
-        text-shadow: none;
+        text-transform: uppercase;
+        font-size: 16px;
     }
 
-        .button:hover{
-            color: $color-white;
-            border: 2px solid $color-white;
-        }
 
-    .logo{
+    .logo {
         font-size: 32px;
         color: $color-secondary;
         text-decoration: none;
@@ -60,92 +29,70 @@
         width: 30%;
         margin: 10px;
         padding: 25px;
-}
+    }
 
     a {
         text-decoration: none;
         font-weight: bold;
-        font-size: 18px;
         color: $color-white;
         margin: 30px;
         padding: 25px;
-    }
 
-        :hover{
+
+        &:hover {
             color: $color-secondary;
         }
+    }
 }
 
-a {
-    text-decoration: none;
-    font-size: 14px;
-    color: $color-white;
-    margin: 30px;
-    padding: 25px;
-}
-    
+// INTRO SECTION COMPONENTS
 
-.header-dividing-line{
-    width:103px;
-    height: 2px;
-    background: $color-secondary;
-    margin: 30px 0px;
-}
-
-.underline{
-    align-self: center;
-    width:103px;
-    height: 2px;
-    background: $color-secondary;
-    margin: 10px auto;
-}
-
-.intro{
+.intro {
     text-align: left;
 
 
-        &__heading{
-            font-size: 48px;
-            font-style: normal;
-            color: $color-secondary;
-            text-transform: uppercase;
-        }
+    &__heading {
+        font-size: 48px;
+        font-style: normal;
+        color: $color-secondary;
+        text-transform: uppercase;
+    }
 
-        &__subheading{
-            font-size: 36px;
-            font-style: normal;
-            color: $color-white;
-        }
+    &__subheading {
+        font-size: 36px;
+        font-style: normal;
+        color: $color-white;
+    }
 }
 
+// PORTFOLIO SECTION COMPONENTS
 
 .portfolio {
     text-align: left;
     align-content: center;
     justify-content: center;
-    
-        &__heading{
-            text-align: center;
-            text-transform: uppercase;
-        }
 
-
-    
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
 
 .projects {
-    margin: 0 4vw;
+    margin: 0;
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     // grid-template-columns: 1fr 1fr 1fr; 
-    gap: 10px; 
-     
+    gap: 10px;
+
 
 }
 
-.project-card{
+// PROEJECT CARDS STYLING
+
+.project-card {
     background-color: transparent;
     // border: 1px solid black;
     margin: 5px;
@@ -156,82 +103,139 @@ a {
     transition: transform 0.4s;
 
 
-        .project-card-image{
-            padding: 0px;
-            margin: 0px;
-            width: 100%;
-            border-radius: 5px 5px 0 0;
-        }
-        
-
-        .project-card-info{
-            padding: 5px;
-            margin: 5px 0px 20px 0px;
-        }
-
-            .project-card-name {
-                padding: 4px;
-                text-transform: uppercase;
-                color: $color-secondary;
-                width: 50%;
-            }
-
-            .project-card-title{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: auto;
-            }
-
-                .project-card-buttons{
-                    margin: 0 10px 0 0;
-                }
+    .project-card-image {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
 
 
-                a {
-                    padding: 0px;
-                    margin: 5px;
-                }
+    .project-card-info {
+        padding: 5px;
+        margin: 5px 0px 20px 0px;
+    }
 
-            p {
-                padding: 4px;
+    .project-card-name {
+        padding: 4px;
+        text-transform: uppercase;
+        color: $color-secondary;
+        width: 100%;
+    }
 
-            }
+    .project-card-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
 
-            i{
-                color: $color-white;
-            }
+    .project-card-buttons {
+        margin: 0 10px 0 0;
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
 
-                i:hover{
-                    color: $color-secondary;
-                }
+    }
+
+
+    a {
+        padding: 0px;
+        margin: 5px;
+    }
+
+    p {
+        padding: 4px;
+        font-size: 14px;
+        margin: 5px 0 0 0;
+
+    }
+
+    i {
+        color: $color-white;
+    }
+
+    i:hover {
+        color: $color-secondary;
+    }
 
 }
 
-.project-card:hover{
+.project-card:hover {
     transform: scale(1.10)
 }
 
-.about{
+
+// ABOUT SECTION COMPONENTS
+.about {
     text-align: left;
     align-content: center;
     justify-content: center;
-    
-        &__heading{
-            text-align: center;
-            text-transform: uppercase;
-        }  
+
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
+
+// FOOTER COMPONENTS
 
 .footer {
     background-color: $color-highlight;
-    
-        i{
+
+
+    a {
+        text-decoration: none;
+
+
+        i {
             font-size: 34px;
             color: $color-secondary;
-        }
+            text-decoration: none;
 
-            :hover{
-                color: $color-white
+
+            &:hover {
+                color: $color-white;
             }
+        }
+    }
+}
+
+
+// STANDALONE COMPONENTS
+.button {
+    font-size: 16px;
+    font-weight: bold;
+    color: $color-secondary;
+    margin: 30px;
+    padding: 15px;
+    background: none;
+    box-shadow: none;
+    border: 2px solid $color-secondary;
+    border-radius: 8px;
+    text-shadow: none;
+
+    &:hover {
+        color: $color-white;
+        border: 2px solid $color-white;
+    }
+
+    &--intro {
+        margin: 70px 0px;
+    }
+}
+
+.header-dividing-line {
+    width: 103px;
+    height: 2px;
+    background: $color-secondary;
+    margin: 30px 0px;
+}
+
+.underline {
+    align-self: center;
+    width: 103px;
+    height: 2px;
+    background: $color-secondary;
+    margin: 10px auto;
 }
