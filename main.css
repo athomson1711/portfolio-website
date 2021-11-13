@@ -74,20 +74,54 @@ a {
   text-transform: uppercase;
 }
 
+.projects {
+  margin: 0 10vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
 .project-card {
   background-color: transparent;
-  border: 1px solid black;
   margin: 5px;
-  padding: 5px;
+  padding: 0px;
   background-color: #4C5B68;
 }
+.project-card .project-card-image {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+.project-card .project-card-info {
+  padding: 5px;
+  margin: 5px 0px 20px 0px;
+}
 .project-card .project-card-name {
+  padding: 4px;
   text-transform: uppercase;
   color: #FFCD38;
   width: 50%;
 }
-.project-card .project-card-image {
-  width: 50%;
+.project-card .project-card-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.project-card .project-card-buttons {
+  margin: 0 10px 0 0;
+}
+.project-card a {
+  padding: 0px;
+  margin: 5px;
+}
+.project-card p {
+  padding: 4px;
+}
+.project-card i {
+  color: #F5F7F9;
 }
 
 .footer {

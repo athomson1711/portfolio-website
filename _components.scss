@@ -62,38 +62,81 @@ a {
 
 .portfolio {
     text-align: left;
-
+    
         &__heading{
             text-align: center;
             text-transform: uppercase;
         }
+    
 }
 
-// .projects {
-//     display: flex;
+.projects {
+    // width: 75%;
+    margin: 0 10vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+     
 
-// }
+}
 
 .project-card{
     background-color: transparent;
-    border: 1px solid black;
+    // border: 1px solid black;
     margin: 5px;
-    padding: 5px;
+    padding: 0px;
     background-color: $color-highlight;
 
-        .project-card-name {
-            text-transform: uppercase;
-            color: $color-secondary;
-            width: 50%;
-        }
-
-        // .project-card-button{
-
-        // }
-
         .project-card-image{
-            width: 50%;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
         }
+        
+
+        .project-card-info{
+            padding: 5px;
+            margin: 5px 0px 20px 0px;
+        }
+
+            .project-card-name {
+                padding: 4px;
+                text-transform: uppercase;
+                color: $color-secondary;
+                width: 50%;
+            }
+
+            .project-card-title{
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0px;
+            }
+
+                .project-card-buttons{
+                    margin: 0 10px 0 0;
+                }
+
+
+                a {
+                    padding: 0px;
+                    margin: 5px;
+                }
+
+            
+
+            
+
+            p {
+                padding: 4px;
+
+            }
+
+            i{
+                color: $color-white;
+            }
 
 }
 
