@@ -12,25 +12,17 @@ body {
   background-color: #3A4C5A;
 }
 
-.logo {
-  font-size: 32px;
-  color: #FFCD38;
-  text-decoration: none;
-  width: 30%;
-  margin: 10px;
-  padding: 25px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 14px;
-  color: #F5F7F9;
-  margin: 30px;
-  padding: 25px;
+.header__background {
+  background-color: green;
+  opacity: 90%;
+  width: 300px;
+  height: 50vh;
+  float: left;
 }
 
 .button {
   font-size: 14px;
+  font-weight: bold;
   color: #FFCD38;
   margin: 30px;
   padding: 15px;
@@ -44,11 +36,69 @@ a {
   margin: 70px 0px;
 }
 
-.dividing-line {
+.button:hover {
+  color: #F5F7F9;
+  border: 2px solid #F5F7F9;
+}
+
+.navigation .button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFCD38;
+  margin: 30px;
+  padding: 15px;
+  background: none;
+  box-shadow: none;
+  border: 2px solid #FFCD38;
+  border-radius: 8px;
+  text-shadow: none;
+}
+.navigation .button:hover {
+  color: #F5F7F9;
+  border: 2px solid #F5F7F9;
+}
+.navigation .logo {
+  font-size: 32px;
+  color: #FFCD38;
+  text-decoration: none;
+  font-weight: normal;
+  width: 30%;
+  margin: 10px;
+  padding: 25px;
+}
+.navigation a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #F5F7F9;
+  margin: 30px;
+  padding: 25px;
+}
+.navigation :hover {
+  color: #FFCD38;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #F5F7F9;
+  margin: 30px;
+  padding: 25px;
+}
+
+.header-dividing-line {
   width: 103px;
   height: 2px;
   background: #FFCD38;
   margin: 30px 0px;
+}
+
+.underline {
+  align-self: center;
+  width: 103px;
+  height: 2px;
+  background: #FFCD38;
+  margin: 10px auto;
 }
 
 .intro {
@@ -68,6 +118,8 @@ a {
 
 .portfolio {
   text-align: left;
+  align-content: center;
+  justify-content: center;
 }
 .portfolio__heading {
   text-align: center;
@@ -75,12 +127,11 @@ a {
 }
 
 .projects {
-  margin: 0 10vw;
+  margin: 0 4vw;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
 
@@ -89,11 +140,15 @@ a {
   margin: 5px;
   padding: 0px;
   background-color: #4C5B68;
+  box-shadow: 3px 3px 10px 0px black;
+  border-radius: 5px;
+  transition: transform 0.4s;
 }
 .project-card .project-card-image {
   padding: 0px;
   margin: 0px;
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 .project-card .project-card-info {
   padding: 5px;
@@ -108,7 +163,8 @@ a {
 .project-card .project-card-title {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0px;
+  align-items: center;
+  margin: auto;
 }
 .project-card .project-card-buttons {
   margin: 0 10px 0 0;
@@ -123,13 +179,33 @@ a {
 .project-card i {
   color: #F5F7F9;
 }
+.project-card i:hover {
+  color: #FFCD38;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.about {
+  text-align: left;
+  align-content: center;
+  justify-content: center;
+}
+.about__heading {
+  text-align: center;
+  text-transform: uppercase;
+}
 
 .footer {
   background-color: #4C5B68;
-  padding: 50px;
-  margin: 30px 0px 0px 0px;
-  height: 10vu;
-  width: 100%;
+}
+.footer i {
+  font-size: 34px;
+  color: #FFCD38;
+}
+.footer :hover {
+  color: #F5F7F9;
 }
 
 .header {
@@ -148,8 +224,8 @@ a {
 }
 
 .main {
-  padding: 30px;
-  margin: 30px;
+  padding: 0px 30px;
+  margin: 0px 30px;
 }
 
 .intro {
@@ -161,4 +237,33 @@ a {
 .portfolio {
   height: 100vh;
   width: 100%;
+}
+.portfolio__header {
+  height: 10%;
+}
+.portfolio__area {
+  height: 90%;
+  display: grid;
+  justify-content: center;
+}
+
+.about {
+  height: 85vh;
+}
+.about__header {
+  height: 10%;
+}
+.about__area {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  height: 10vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
