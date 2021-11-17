@@ -239,3 +239,59 @@
     background: $color-secondary;
     margin: 10px auto;
 }
+
+@media screen and (max-width: 498px) {
+    .intro {
+
+        &__heading {
+            margin-top: 40px;
+            font-size: 38px;
+        }
+    
+        &__subheading {
+            margin-top: 30px;
+            font-size: 26px;
+        }
+    }
+
+
+    .projects {
+        margin: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+        gap: 10px;
+
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+
+        &__heading {
+            margin-top: 40px;
+            font-size: 42px;
+        }
+    
+        &__subheading {
+            margin-top: 30px;
+            font-size: 32px;
+        }
+    }
+
+
+    .projects {
+        margin: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;  
+        gap: 10px;
+
+
+    }
+}
