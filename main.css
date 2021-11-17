@@ -189,7 +189,79 @@ body {
   margin: 10px auto;
 }
 
-@media screen and (max-width: 498px) {
+@media only screen and (max-width: 991px) {
+  .intro__heading {
+    margin-top: 48px;
+    font-size: 38px;
+  }
+  .intro__subheading {
+    margin-top: 30px;
+    font-size: 36px;
+  }
+
+  .projects {
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .navigation *,
+.navigation .button {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .navigation .logo {
+    font-size: 26px;
+    width: 20%;
+    margin: 15px;
+    padding: 12px;
+  }
+  .navigation a {
+    margin: 15px;
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro__heading {
+    margin-top: 40px;
+    font-size: 38px;
+  }
+  .intro__subheading {
+    margin-top: 30px;
+    font-size: 26px;
+  }
+
+  .projects {
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .navigation *,
+.navigation .button {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .navigation .logo {
+    font-size: 18px;
+    width: 10%;
+    margin: 7px;
+    padding: 6px;
+  }
+  .navigation a {
+    margin: 7px;
+    padding: 6px;
+  }
+}
+@media only screen and (max-width: 480px) {
   .intro__heading {
     margin-top: 40px;
     font-size: 38px;
@@ -206,27 +278,23 @@ body {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 10px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .intro__heading {
-    margin-top: 40px;
-    font-size: 42px;
-  }
-  .intro__subheading {
-    margin-top: 30px;
-    font-size: 32px;
+    row-gap: 5px;
   }
 
-  .projects {
-    margin: 0;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  .navigation *,
+.navigation .button {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .navigation .logo {
+    font-size: 18px;
+    width: 10%;
+    margin: 7px;
+    padding: 6px;
+  }
+  .navigation a {
+    margin: 7px;
+    padding: 6px;
   }
 }
 .header {
@@ -253,6 +321,7 @@ body {
   height: 90%;
   width: 40%;
   margin: 30px;
+  margin-top: 60px;
 }
 
 .portfolio {
@@ -295,16 +364,16 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 498px) {
+@media only screen and (max-width: 991px) {
   .intro {
     height: 90%;
-    width: 90%;
+    width: 55%;
     margin: 25px 15px 15px 15px;
   }
 
   .main {
-    padding: 0px 15px;
-    margin: 0px 15px;
+    padding: 0px 10px;
+    margin: 0px 10px;
   }
 
   .portfolio {
@@ -322,7 +391,7 @@ body {
   }
 
   .about {
-    height: 300px;
+    height: 500px;
   }
   .about__header {
     height: 10%;
@@ -333,14 +402,14 @@ body {
   }
 
   .footer__buttons {
-    width: 75%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .intro {
     height: 90%;
     width: 60%;
@@ -348,8 +417,53 @@ body {
   }
 
   .main {
-    padding: 0px 15px;
-    margin: 0px 15px;
+    padding: 0px 10px;
+    margin: 0px 10px;
+  }
+
+  .portfolio {
+    height: auto;
+    width: 100%;
+  }
+  .portfolio__header {
+    height: 10%;
+    margin: 25px 0px;
+  }
+  .portfolio__area {
+    height: 90%;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .about {
+    height: 500px;
+  }
+  .about__header {
+    height: 10%;
+    margin: 40px 0px;
+  }
+  .about__area {
+    margin: 25px 0px;
+  }
+
+  .footer__buttons {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .intro {
+    height: 90%;
+    width: 90%;
+    margin: 25px 15px 15px 15px;
+  }
+
+  .main {
+    padding: 0px 10px;
+    margin: 0px 10px;
   }
 
   .portfolio {

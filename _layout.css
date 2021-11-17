@@ -1,0 +1,156 @@
+.header {
+  padding: 10px;
+  margin: 10px;
+  height: 100vh;
+}
+
+.navigation {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  padding: 0px 30px;
+  margin: 0px 30px;
+}
+
+.intro {
+  height: 90%;
+  width: 40%;
+  margin: 30px;
+}
+
+.portfolio {
+  height: 100vh;
+  width: 100%;
+}
+.portfolio__header {
+  height: 10%;
+}
+.portfolio__area {
+  height: 90%;
+  display: grid;
+  justify-content: center;
+}
+
+.about {
+  height: 85vh;
+}
+.about__header {
+  height: 10%;
+}
+.about__area {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+.footer__buttons {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .intro {
+    height: 90%;
+    width: 90%;
+    margin: 25px 15px 15px 15px;
+  }
+
+  .main {
+    padding: 0px 10px;
+    margin: 0px 10px;
+  }
+
+  .portfolio {
+    height: auto;
+    width: 100%;
+  }
+  .portfolio__header {
+    height: 10%;
+    margin: 25px 0px;
+  }
+  .portfolio__area {
+    height: 90%;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .about {
+    height: 300px;
+  }
+  .about__header {
+    height: 10%;
+    margin: 40px 0px;
+  }
+  .about__area {
+    margin: 25px 0px;
+  }
+
+  .footer__buttons {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    height: 90%;
+    width: 90%;
+    margin: 25px 15px 15px 15px;
+  }
+
+  .main {
+    padding: 0px 10px;
+    margin: 0px 10px;
+  }
+
+  .portfolio {
+    height: auto;
+    width: 100%;
+  }
+  .portfolio__header {
+    height: 10%;
+    margin: 25px 0px;
+  }
+  .portfolio__area {
+    height: 90%;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .about {
+    height: 500px;
+  }
+  .about__header {
+    height: 10%;
+    margin: 40px 0px;
+  }
+  .about__area {
+    margin: 25px 0px;
+  }
+
+  .footer__buttons {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
