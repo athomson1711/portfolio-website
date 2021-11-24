@@ -169,13 +169,18 @@
 
 // ABOUT SECTION COMPONENTS
 .about {
-    text-align: left;
+    text-align: center;
     align-content: center;
     justify-content: center;
 
     &__heading {
         text-align: center;
         text-transform: uppercase;
+    }
+
+    p{
+        width: 60%;
+        margin: auto;
     }
 }
 
